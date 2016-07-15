@@ -71,28 +71,74 @@
             <td>456</td>
         </tr>
     </table>
-    <table border="1">
+    <caption>titulo tabla</caption>
+    <thead>
+        <table border="1">
+          <tr>
+              <td rowspan="2" colspan="2">aaa</td>
+               <td colspan="4">bbb</td>
+               <td>ccc</td>
+          </tr>
+    </thead>
+    <tfoot>
+          <tr>
+              <td colspan="2">hhh</td>
+              <td colspan="3">hhh</td>
+          </tr>
+      </tfoot>
+     <tbody>
+          <tr>
+              <td>ccc</td>
+              <td colspan="2">ddd</td>
+              <td colspan="2">eee</td>
+          </tr>
+      </tbody>
       <tr>
-          <td rowspan="2" colspan="2">a</td>
-           <td colspan="4">b</td>
-           <td>c</td>
-      </tr>
-      <tr>
-          <td>c</td>
-          <td colspan="2">d</td>
-          <td colspan="2">e</td>
-      </tr>
-      <tr>
-          <td rowspan="2">f</td>
-          <td rowspan="2">f</td>
+          <td rowspan="2">fff</td>
+          <td rowspan="2">fff</td>
           <td></td>
-          <td colspan="2">g</td>
-          <td colspan="2">g</td>
-      </tr>
-      <tr>
-          <td colspan="2">h</td>
-          <td colspan="3">h</td>
+          <td colspan="2">ggg</td>
+          <td colspan="2">ggg</td>
       </tr>
     </table>
+    
+    <img src="images/imagen.jpg" alt="gato" height="300">
+    <video width="500" controls><source src="videdo/MicroYapa-EnElViejoHospitalDeLosMunecos.mp4"></video>
+    <audio controls ><source src="audio/Just-Like-Fire.mp3"></audio>
+    <hr>
+        <form method="post" action="#">
+        <label for="nombre: ">Nombre:</label>
+        <input type="text" placeholder="Nombre" required><br>
+        <label for="cedula">Cedula: </label>
+        <input type="number" min="0" required><br>
+        <label for="email">Email: </label>
+        <input type="email"><br>
+        <label for="genero">Sexo: </label>
+        <input type="radio" name="genero" value="M">
+        <input type="radio" name="genero" value="F"><br>
+        <label for="password">Contraseña: </label>
+        <input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="la contraseña debe cntener al menos un numero y letra mayuscula, debe"><br>
+        <label for="mensaje">descripcion: </label>
+        <textarea name="mensaje" id="mensaje" cols="10" rows="4"></textarea><br>
+        <select name="color">
+            <optgroup label="calidos">
+                <option value="red">rojo</option>
+                <option value="green">verde</option>
+            </optgroup>
+            <optgroup label="frios">
+                <option value="blue">azul</option>
+            </optgroup>
+        </select><br>
+        <datalist id="diccionario">
+            <option value="dario"></option>
+            <option value="daniel"></option>
+            <option value="fernando"></option>
+            <option value="francisco"></option>
+        </datalist>
+        <input list="diccionario" placeholder="nombre">
+        <input type="submit">
+        </form>        
+    </form> 
+    
   </body>
 </html>
